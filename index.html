@@ -8,10 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <img class="logo" src="./assests/logo.png" alt="Gerador de senha logo">
-    <main class="container-input"></main>
-    <span>Tamanho <span id="valor"></span> caractesres</span>
-    <input id="slider" class="slider" type="range" min="5" max="25 "value="15">
+
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> caractesres</span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+
+        <button id="button" class="button-cta">Gerar Senha</button>
+    </main>
+
+        <div id="container-password" class="container-password hide">
+            <span class="title">Sua senha gerada foi:</span>
+            <span id="password">1234312312312</span>
+            <span>Clique na senha para copiar. ☝️</span>
+        </div>
+
 
     <script src="script.js"></script>
 </body>
